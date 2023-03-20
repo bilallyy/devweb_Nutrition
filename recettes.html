@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>/* Recipe Page Styles */
+
+        /* Header */
+        
+        header {
+          background-color: #4CAF50;
+          color: #fff;
+          padding: 20px;
+        }
+        
+        header h1 {
+          margin: 0;
+        }
+        
+        /* Navigation */
+        
+        nav {
+          float: right;
+          margin-top: 10px;
+        }
+        
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        nav li {
+          display: inline-block;
+          margin-left: 20px;
+        }
+        
+        nav a {
+          color: #fff;
+          text-decoration: none;
+        }
+        
+        /* Page Content */
+        
+        .container {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+        
+        .featured-recipes {
+          margin-bottom: 50px;
+        }
+        
+        .featured-recipes h2 {
+          font-size: 36px;
+          margin-top: 0;
+        }
+        
+        .featured-recipes .recipe {
+          display: inline-block;
+          width: 30%;
+          margin-right: 5%;
+          margin-bottom: 20px;
+          vertical-align: top;
+          box-sizing: border-box;
+          padding: 20px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        
+        .featured-recipes .recipe:last-child {
+          margin-right: 0;
+        }
+        
+        .featured-recipes .recipe img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+        
+        .featured-recipes .recipe h3 {
+          font-size: 24px;
+          margin-top: 0;
+        }
+        
+        .featured-recipes .recipe p {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+        
+        .recipe-categories {
+          margin-bottom: 50px;
+        }
+        
+        .recipe-categories h2 {
+          font-size: 36px;
+          margin-top: 0;
+        }
+        
+        .category-list {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        .category-list li {
+          flex: 1 0 25%;
+          box-sizing: border-box;
+          padding: 20px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          min-width: 200px;
+        }
+        
+        .category-list li:last-child {
+          margin-right: 0;
+        }
+        
+        .category-list a {
+          color: #333;
+          text-decoration: none;
+        }
+        
+        .category-list h3 {
+          font-size: 24px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        
+        /* Recipe Search */
+        
+        .recipe-search {
+          margin-bottom: 50px;
+        }
+        
+        .recipe-search input[type="text"] {
+          padding: 10px;
+          width: 50%;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+        
+        .recipe-search input[type="submit"] {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          background-color: #8cc63f;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          margin-left: 10px;
+        }
+        
+        /* Recipe of the Day */
+        
+        .recipe-of-the-day {
+          margin-bottom: 50px;
+        }
+        
+        .recipe-of-the-day h2 {
+          font-size: 36px;
+          margin-top: 0;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu {
+        float: right;
+         margin-right: 20px;
+        }
+        
+        .recipe-of-the-day .
+        </style>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+        <div class="logo">Happy Nutrition</div>
+        <h1>Happy Nutrition</h1>
+        <nav>
+            <ul class="menu">
+                <li><a class="active" href="articles.html">Articles</a></li>
+                <li><a href="pratique.html">Pratique nutritionnelle</a></li>
+                <li><a href="pratiques.html">Pratique sportive</a></li>
+                <li><a href="recettes.html">Recettes</a></li>
+                <li><a href="regimes.html">Régimes</a></li>
+            </ul>
+        </nav>
+        <button class="connecter-button"><a href="connecter.html">Connecter</a></button>
+    </header>
+    <section class="featured-recipes">
+    <div class="container">
+        <h2>Featured Recipes</h2>
+        <div class="recipe">
+            <img src="chicken-parmesan-recipe.jpg" alt="Recipe 1">
+            <h3>Chicken Parmesan</h3>
+            <p>A classic Italian dish that is perfect for any occasion.</p>
+            <a href="https://chefcuisto.com/recette/poulet-parmesan-la-meilleure/">View Recipe</a>
+        </div>
+        <div class="recipe">
+            <img src="avocado--scaled.jpeg" alt="Recipe 2">
+            <h3>Avocado Toast</h3>
+            <p>A quick and healthy breakfast or snack that is easy to make.</p>
+            <a href="https://www.papillesetpupilles.fr/2016/05/grilled-cheese-ou-sandwich-au-fromage-fondu.html/">View Recipe</a>
+        </div>
+    </div>
+</section>
+
+<section class="recipe-categories">
+    <div class="container">
+        <h2>Recipe Categories</h2>
+        <ul class="category-list">
+            <li><a href="https://www.ricardocuisine.com/recettes/entrees/bouchees?searchValue=&sort=recent&content-type=recipe&groupingType=2&grouping-id=2206&currentPage=1">
+                <img src="images/category1.jpg" alt="Category 1">
+                <h3>Appetizers</h3>
+                <p>Small bites to start your meal off right.</p>
+            </a></li>
+            
+            <li><a href="#">
+                <img src="Photosrepasprincipal.jpg" alt="Category 2">
+                <h3>Main Dishes</h3>
+                <p>Hearty meals that are the stars of the show.</p>
+            </a></li>
+            
+            <li><a href="#">
+                <img src="avocado--scaled.jpeg" alt="Category 3">
+                <h3>Desserts</h3>
+                <p>Sweet treats to finish your meal on a high note.</p>
+            </a></li>
+            
+            <li><a href="#">
+                <img src="images/category4.jpg" alt="Category 4">
+                <h3>Drinks</h3>
+                <p>Beverages to quench your thirst.</p>
+            </a></li>
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="recipe-of-the-day">
+
+    <div class="container">
+        <h2>Recipe of the Day</h2>
+        <div class="recipe-card">
+            <img src="SandwichFromagePommesP60web.jpg" alt="Recipe of the Day">
+            <div class="recipe-details">
+                <h3>Grilled Cheese Sandwich</h3>
+                <p>A simple and delicious sandwich that everyone will love.</p>
+                <a href="https://www.papillesetpupilles.fr/2016/05/grilled-cheese-ou-sandwich-au-fromage-fondu.html/">View Recipe</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Recipe of the Day</h2>
+        <div class="recipe-card">
+            <img src="salade-nicoise-rapide.jpeg" alt="Recipe of the Day">
+            <div class="recipe-details">
+                <h3> Salade </h3>
+                <p>A simple and delicious Salade that everyone will be test </p>
+                <a href="https://www.marmiton.org/recettes/recette_salade-cesar_32442.aspx">View Recipe</a>
+            </div>
+        </div>
+    </div> 
+
+</section>
+</body>
+</html>
+<footer>
+        <p>&copy; 2023  CY Tech</p>
+    </footer>
+</body>
+</html>

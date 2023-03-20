@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>/* Recipe Page Styles */
+
+        /* Header */
+        
+        header {
+          background-color: #4CAF50;
+          color: #fff;
+          padding: 20px;
+        }
+        
+        header h1 {
+          margin: 0;
+        }
+        
+        /* Navigation */
+        
+        nav {
+          float: right;
+          margin-top: 10px;
+        }
+        
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        nav li {
+          display: inline-block;
+          margin-left: 20px;
+        }
+        
+        nav a {
+          color: #fff;
+          text-decoration: none;
+        }
+        
+        /* Page Content */
+        
+        .container {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+        
+        .featured-recipes {
+          margin-bottom: 50px;
+        }
+        
+        .featured-recipes h2 {
+          font-size: 36px;
+          margin-top: 0;
+        }
+        
+        .featured-recipes .recipe {
+          display: inline-block;
+          width: 30%;
+          margin-right: 5%;
+          margin-bottom: 20px;
+          vertical-align: top;
+          box-sizing: border-box;
+          padding: 20px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        
+        .featured-recipes .recipe:last-child {
+          margin-right: 0;
+        }
+        
+        .featured-recipes .recipe img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+        
+        .featured-recipes .recipe h3 {
+          font-size: 24px;
+          margin-top: 0;
+        }
+        
+        .featured-recipes .recipe p {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+        
+        .recipe-categories {
+          margin-bottom: 50px;
+        }
+        
+        .recipe-categories h2 {
+          font-size: 36px;
+          margin-top: 0;
+        }
+        
+        .category-list {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        .category-list li {
+          flex: 1 0 25%;
+          box-sizing: border-box;
+          padding: 20px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          min-width: 200px;
+        }
+        
+        .category-list li:last-child {
+          margin-right: 0;
+        }
+        
+        .category-list a {
+          color: #333;
+          text-decoration: none;
+        }
+        
+        .category-list h3 {
+          font-size: 24px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        
+        /* Recipe Search */
+        
+        .recipe-search {
+          margin-bottom: 50px;
+        }
+        
+        .recipe-search input[type="text"] {
+          padding: 10px;
+          width: 50%;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+        
+        .recipe-search input[type="submit"] {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          background-color: #8cc63f;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          margin-left: 10px;
+        }
+        
+        /* Recipe of the Day */
+        
+        .recipe-of-the-day {
+          margin-bottom: 50px;
+        }
+        
+        .recipe-of-the-day h2 {
+          font-size: 36px;
+          margin-top: 0;
+        }
+        #idees-pratique-sport {
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: start;
+  padding-right: 30px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.slide p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .slide {
+    width: 50%;
+  }
+  
+  .slide:nth-child(odd) {
+    padding-right: 15px;
+  }
+  
+  .slide:nth-child(even) {
+    padding-left: 15px;
+  }
+}
+
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-wrapper {
+  margin: 20px 0;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* aspect ratio 16:9 */
+  border: none;
+}
+
+        .menu {
+        float: right;
+         margin-right: 20px;
+        }
+        
+        .recipe-of-the-day .
+        </style>
+
+        <!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Site de pratique sportive</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Happy Nutrition</div>
+        <h1>Happy Nutrition</h1>
+        <nav>
+            <ul class="menu">
+                <li><a class="active" href="articles.html">Articles</a></li>
+                <li><a href="pratique.html">Pratique nutritionnelle</a></li>
+                <li><a href="pratiques.html">Pratique sportive</a></li>
+                <li><a href="recettes.html">Recettes</a></li>
+                <li><a href="regimes.html">Régimes</a></li>
+            </ul>
+        </nav>
+        <button class="connecter-button"><a href="connecter.html">Connecter</a></button>
+    </header>
+    <!DOCTYPE html>
+<html lang="fr">
+
+
+	<main>
+		<section id="programmes-entrainement">
+			<h2>Programmes d'entraînement</h2>
+			<p>Notre site propose des programmes d'entraînement adaptés à différents niveaux de pratique sportive, en fonction de l'âge, du sexe et des objectifs de chacun. Nos programmes sont élaborés par des professionnels de la santé et du sport, et sont régulièrement mis à jour pour garantir des résultats optimaux.</p>
+			<ul>
+				<li>Programme débutant : pour les personnes qui n'ont jamais pratiqué ce sport auparavant.</li>
+				<li>Programme intermédiaire : pour les personnes qui ont déjà une certaine expérience et qui cherchent à améliorer leur condition physique.</li>
+				<li>Programme avancé : pour les personnes qui pratiquent ce sport depuis plusieurs années et qui cherchent à se perfectionner.</li>
+			</ul>
+		</section>
+		<section id="resultats-competitions">
+			<h2>Résultats de compétitions</h2>
+			<p>Nous organisons régulièrement des compétitions et nous publions les résultats des différentes épreuves sur notre site web. Vous pourrez y retrouver les résultats de nos dernières compétitions ainsi que les statistiques des performances de nos athlètes.</p>
+		</section>
+		<section id="videos-entrainement">
+			<h2>Vidéos d'entraînement</h2>
+			<p>Nous avons créé une série de vidéos d'entraînement pour vous accompagner dans votre pratique sportive. Ces vidéos sont accessibles gratuitement sur notre site web et couvrent différents niveaux et aspects de la pratique sportive. Elles sont animées par des professionnels du sport et offrent des conseils pratiques pour améliorer vos performances et réduire les risques de blessure.</p>
+  <p>Nous vous invitons à découvrir nos vidéos et à les partager avec vos amis pour les aider à progresser dans leur pratique sportive.</p>
+
+
+  <h3>Nos vidéos</h3>
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+</section>
+
+<section id="idees-pratique-sport">
+  <h2>Idées de pratique sportive</h2>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="article1.jpg" alt="Article 1">
+        <h3>Titre de l'article 1</h3>
+        <p>Description de l'article 1</p>
+      </div>
+      <div class="slide">
+        <img src="article2.jpg" alt="Article 2">
+        <h3>Titre de l'article 2</h3>
+        <p>Description de l'article 2</p>
+      </div>
+      <div class="slide">
+        <img src="article3.jpg" alt="Article 3">
+        <h3>Titre de l'article 3</h3>
+        <p>Description de l'article 3</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+        <p>&copy; 2023  CY Tech</p>
+    </footer>
+</body>
+</html>

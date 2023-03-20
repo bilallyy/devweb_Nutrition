@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    
+    <style>
+            /* Header */
+        
+            header {
+          background-color: #4CAF50;
+          color: #fff;
+          padding: 20px;
+        }
+        
+        header h1 {
+          margin: 0;
+        }
+        
+        /* Navigation */
+        
+        nav {
+          float: right;
+          margin-top: 10px;
+        }
+        
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        nav li {
+          display: inline-block;
+          margin-left: 20px;
+        }
+        
+        nav a {
+          color: #fff;
+          text-decoration: none;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+.recipe-search {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.recipe-search h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recipe-search form {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-search input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.recipe-search input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.article-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-container h2 {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.article-container table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.article-container td {
+    width: 33.33%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.article-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+        /* Recipe Search */
+        
+        .recipe-search {
+          margin-bottom: 50px;
+        }
+        
+        .recipe-search input[type="text"] {
+          padding: 10px;
+          width: 50%;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+        
+        .recipe-search input[type="submit"] {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          background-color: #4CAF50;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          margin-left: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">Happy Nutrition</div>
+        <h1>Happy Nutrition</h1>
+        <nav>
+            <ul class="menu">
+                <li><a class="active" href="articles.html">Articles</a></li>
+                <li><a href="pratique.html">Pratique nutritionnelle</a></li>
+                <li><a href="pratiques.html">Pratique sportive</a></li>
+                <li><a href="recettes.html">Recettes</a></li>
+                <li><a href="regimes.html">Régimes</a></li>
+            </ul>
+        </nav>
+        <button class="connecter-button"><a href="connecter.html">Connecter</a></button>
+    </header>
+
+    
+    <section class="recipe-search">
+        <div class="container">
+            <h2>Chercher la </h2>
+            <form>
+                <input type="text" placeholder="Search for recipes...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="article-container">
+                <h2><a href="articles.html">Articles</a></h2>
+            </div>
+        </li>
+        <li>
+            <div class="article-container">
+                <h2><a href="articles.html">Pratique nutritionnelle</a></h2>
+                <table>
+                    <tr>
+                        <td><img src="/articles.html/carre_noir.jpg" alt="carre_noir"></td>
+                        <td><img src="/articles.html/carre_noir.jpg" alt="carre_noir"></td>
+                        <td><img src="/articles.html/carre_noir.jpg" alt="carre_noir"></td>
+
+                    </tr>
+                </table>
+            </div>
+        </li>
+        <li>
+            <div class="article-container">
+                <h2><a href="articles.html">Pratique sportive</h2>
+            </div>
+        </li>
+        <li>
+            <div class="article-container">
+                <h2><a href="articles.html">Recettes</a></h2>
+            </div>
+        </li>
+        <li>
+            <div class="article-container">
+                <h2><a href="articles.html">Régimes</a></h2>
+            </div>
+        </li>
+    </ul>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-container">
+                <h3>Contact Us</h3>
+                <p>123 Main Street</p>
+                <p>Paris, France</p>
+                <p>Phone: +33 123 456 789</p>
+                <p>Email: info@myhappynutrition.com</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/myhappynutrition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/myhappynutrition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="map-container">
+                <h3>Find Us</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.856525065766!2d2.337757108724491!3d48.864712125184386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f6bde6c19%3A0x6a205c6bb76f6ca7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1658168689754!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p>&copy; 2023  CY Tech</p>
+    </footer>
+    
