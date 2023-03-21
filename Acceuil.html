@@ -122,7 +122,7 @@ li {
 }
 
 .article-container table {
-    width: 100%;
+    width: 20em;
     margin-top: 20px;
     border-collapse: collapse;
 }
@@ -134,8 +134,8 @@ li {
 }
 
 .article-container img {
-    max-width: 100%;
-    height: auto;
+    max-width: 20em;
+    height: 20em;
     display: block;
     margin: 0 auto;
 }
@@ -164,6 +164,84 @@ li {
           cursor: pointer;
           margin-left: 10px;
         }
+        /*Footer */
+
+        footer {
+  background-color: #4CAF50;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  width: 50%;
+  max-width: 500px;
+}
+
+.contact-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #3b5998;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.social-media a:hover {
+  background-color: #344d6b;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.map-container {
+  width: 50%;
+  max-width: 500px;
+}
+
+.map-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container,
+  .map-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .social-media {
+    margin-top: 20px;
+  }
+}
 
     </style>
 
@@ -172,12 +250,13 @@ li {
 
     <header>
         <div class="logo">Happy Nutrition</div>
-        <h1>Happy Nutrition</h1>
+        <h1><a href="Acceuil.html"> Happy Nutrition </a></h1>
+
         <nav>
             <ul class="menu">
                 <li><a class="active" href="articles.html">Articles</a></li>
                 <li><a href="pratique.html">Pratique nutritionnelle</a></li>
-                <li><a href="pratiques.html">Pratique sportive</a></li>
+                <li><a href="Pratiques sportif.html">Pratique sportive</a></li>
                 <li><a href="recettes.html">Recettes</a></li>
                 <li><a href="regimes.html">Régimes</a></li>
             </ul>
@@ -214,9 +293,9 @@ li {
                 <h2><a href="articles.html">Pratique nutritionnelle</a></h2>
                 <table>
                     <tr>
-                        <td><img src="/articles.html/carre_noir.jpg" alt="carre_noir"></td>
-                        <td><img src="/articles.html/carre_noir.jpg" alt="carre_noir"></td>
-                        <td><img src="/articles.html/carre_noir.jpg" alt="carre_noir"></td>
+                        <td><img src="avocado--scaled.jpeg" alt="carre_noir"></td>
+                        <td><img src="chicken-parmesan-recipe.jpg" alt="carre_noir"></td>
+                        <td><img src="SandwichFromagePommesP60web.jpg" alt="carre_noir"></td>
 
                     </tr>
                 </table>
@@ -244,22 +323,23 @@ li {
 
     <footer>
         <div class="footer-container">
-            <div class="contact-container">
-                <h3>Contact Us</h3>
-                <p>123 Main Street</p>
-                <p>Paris, France</p>
-                <p>Phone: +33 123 456 789</p>
-                <p>Email: info@myhappynutrition.com</p>
-                <div class="social-media">
-                    <a href="https://www.facebook.com/myhappynutrition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/myhappynutrition"><i class="fab fa-instagram"></i></a>
-                </div>
+          <div class="contact-container">
+            <h3>Contact Us</h3>
+            <p>avenue de port </p>
+            <p>Cergy, France</p>
+            <p>Phone: +33 123 456 789</p>
+            <p>Email: Cytech@myhappynutrition.com</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/myhappynutrition"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/myhappynutrition"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/myhappynutrition"><i class="fab fa-youtube"></i></a>
             </div>
-            <div class="map-container">
-                <h3>Find Us</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.856525065766!2d2.337757108724491!3d48.864712125184386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f6bde6c19%3A0x6a205c6bb76f6ca7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1658168689754!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+          </div>
+          <div class="map-container">
+            <h3>Find Us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.856525065766!2d2.337757108724491!3d48.864712125184386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f6bde6c19%3A0x6a205c6bb76f6ca7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1658168689754!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </div>
         <p>&copy; 2023  CY Tech</p>
-    </footer>
-    
+      </footer>
+      
