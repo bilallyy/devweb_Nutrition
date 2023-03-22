@@ -23,6 +23,7 @@
           text-align: center;
           font-family: Georgia, 'Times New Roman', Times, serif;
           margin-top: 0%;
+          margin-bottom: 0%;
         }
 
         header a {
@@ -31,190 +32,89 @@
             border-radius: 15px;
             padding: 15px;
             background-color: #237726;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         header a:hover {
             background-color: #3f2377;
         }
         
         nav {
-            float: right;
-            
+            float: right;    
         }
           
         nav li {
-            display: inline-block;
-            margin-left: 25px;
+          display: inline-block;
+          margin-left: 25px;
         }
         
         .connecter-button{
-        float: left;
-        font-size: 25px;
+          float: left;
+          font-size: 25px;
         }
         
       /*Corps de la page*/
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
+      .article-container{
+        background-color: rgb(70, 139, 244);
+      }
+      .pratique-container{
+        background-color: yellow;
+      }
+      .pratiqueSport-container{
+        background-color: grey;
+      }
+      .recette-container{
+        background-color: brown;
+      }
+      .regime-container{
+        background-color: burlywood;
+      }
+      /*Carte articles*/
+      .card {
+        width: 210px;
+        height: 190px;
+        background: white;
+        padding: .4em;
+        border-radius: 6px;
+        margin: 15px;
+      }
+
+      .card-image {
+        background-color: rgb(236, 236, 236);
+        width: 100%;
+        height: 90%;
+        border-radius: 6px 6px 0 0;
+      }
+
+      .card-image:hover {
+        transform: scale(0.98);
       }
 
 
-      h2 {
-          font-size: 24px;
-          font-weight: bold;
-      }
 
-.recipe-search {
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-.recipe-search h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.recipe-search form {
-    display: flex;
-    justify-content: center;
-}
-
-.recipe-search input[type="text"] {
-    padding: 10px;
-    width: 50%;
-    border-radius: 5px;
-    border: none;
+  body {
+    font-family: Arial, sans-serif;
     font-size: 16px;
-    margin-right: 10px;
-}
+    line-height: 1.5;
+  }
 
-.recipe-search input[type="submit"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
+  h2 {
+      font-size: 24px;
+      font-weight: bold;
+  }
 
-.article-container {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.article-container h2 {
-    font-size: 24px;
-    margin: 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.article-container table {
-    width: 20em;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-.article-container td {
-    width: 33.33%;
-    padding: 10px;
-    vertical-align: middle;
-}
-
-.article-container img {
-    max-width: 20em;
-    height: 20em;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Recipe Search */
-.recipe-search {
-  margin-bottom: 50px;
-}
-
-.recipe-search input[type="text"] {
-  padding: 10px;
-  width: 50%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.recipe-search input[type="submit"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #4CAF50;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 10px;
-}
 
 /*Footer */
 footer {
-  background-color: #4CAF50;
-  padding: 50px 0;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.contact-container {
-  width: 50%;
-  max-width: 500px;
-}
-
-.contact-container h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.contact-container p {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.social-media a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #3b5998;
-  color: #fff;
+  background-color: #6fbe3e;
+  padding: 2px;
   text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: background-color 0.2s ease-in-out;
+  color: #fff;
+  
 }
 
-.social-media a:hover {
-  background-color: #344d6b;
-}
 
-.social-media a:last-child {
-  margin-right: 0;
-}
 
-.map-container {
-  width: 50%;
-  max-width: 500px;
-}
-
-.map-container h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
 
 iframe {
   width: 100%;
@@ -223,11 +123,17 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
-  .contact-container,
-  .map-container {
-    width: 100%;
-    max-width: none;
+  header nav{
+    display: none;
   }
+
+.contact-container,
+.map-container {
+width: 100%;
+max-width: none;
+}
+
+  
 
   .social-media {
     margin-top: 20px;
@@ -242,6 +148,7 @@ iframe {
     <header>
         
         <h1> Happy Nutrition </h1>
+        
 
         <nav>
             <ul class="menu">
@@ -252,78 +159,58 @@ iframe {
                 <li><a href="regimes.html">Régimes</a></li>
             </ul>
         </nav>
-        <button class="connecter-button"><a href="connecter.html">Se Connecter</a></button>
+        <a class="connecter-button" href="connecter.html">Se Connecter</a>
     </header>
-
-    
-    <section class="recipe-search">
-        <div class="container">
-            <h2>Rechercher</h2>
-            <form>
-                <input type="text" placeholder="Rechercher une recette">
-                <input type="submit" value="Search">
-            </form>
-        </div>
         
-
-<body>
     <ul>
-        <li>
+
             <div class="article-container">
                 <h2><a href="articles.html">Articles</a></h2>
+                <div class="card">
+                  <div class="card-image"></div>
+                  <div class="category"> Illustration </div>
+              </div>
             </div>
-        
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Pratique nutritionnelle</a></h2>
-                <table>
-                    <tr>
-                        <td><img src="avocado--scaled.jpeg" alt="carre_noir"></td>
-                        <td><img src="chicken-parmesan-recipe.jpg" alt="carre_noir"></td>
-                        <td><img src="SandwichFromagePommesP60web.jpg" alt="carre_noir"></td>
 
-                    </tr>
-                </table>
+            <div class="pratique-container">
+                <h2><a href="/pratique.html">Pratique nutritionnelle</a></h2>
+                <div class="card">
+                  <div class="card-image"></div>
+                  <div class="category"> Illustration </div>
+              </div>
             </div>
-        </li>
-       
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Pratique sportive</h2>
+
+            <div class="pratiqueSport-container">
+                <h2><a href="/pratiqueSport.html">Pratique sportive</h2>
+                  <div class="card">
+                    <div class="card-image"></div>
+                    <div class="category"> Illustration </div>
+                </div>
             </div>
-        </li>
-        
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Recettes</a></h2>
+
+            <div class="recette-container">
+                <h2><a href="/recettes.html">Recettes</a></h2>
+                <div class="card">
+                  <div class="card-image"></div>
+                  <div class="category"> Illustration </div>
+              </div>
             </div>
-        </li>
-       
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Régimes</a></h2>
+
+            <div class="regime-container">
+                <h2><a href="/regimes.html">Régimes</a></h2>
+                <div class="card">
+                  <div class="card-image"></div>
+                  <div class="category"> Illustration </div>
+              </div>
             </div>
-        </li>
     </ul>
 
 
 
 
-    <footer>
-        <div class="footer-container">
-          <div class="contact-container">
-            <h3>Contact Us</h3>
-            <p>avenue de port </p>
-            <p>Cergy, France</p>
-            <p>Phone: +33 123 456 789</p>
-            <p>Email: Cytech@myhappynutrition.com</p>
-            <div class="social-media">
-              <a href="https://www.facebook.com/myhappynutrition"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/myhappynutrition"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/myhappynutrition"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-        <p>&copy; 2023  CY Tech</p>
+      <footer>
+            <h3>Contacter Nous</h3>
+            <p>Cergy, France <br>Phone: +33 123 456 789 <br>Email: Cytech@myhappynutrition.com</p>
+            <p>&copy; 2023  CY Tech</p>
       </footer>
       
