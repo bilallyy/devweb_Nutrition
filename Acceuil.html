@@ -3,75 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition</title>
+    <title>Acceuil</title>
     
     <style>
-            /* Header */
-        
-            header {
-          background-color: #4CAF50;
-          color: #fff;
-          padding: 20px;
+            
+       /* Header */
+        header {
+            background-color: #6fbe3e;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            width: 97%;
+            top: 0%;
         }
-        
-        header h1 {
-          margin: 0;
+
+        h1 {
+          font-size: 80px;
+          font-weight: bold;
+          text-align: center;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          margin-top: 0%;
         }
-        
-        /* Navigation */
+
+        header a {
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 15px;
+            background-color: #237726;
+        }
+        header a:hover {
+            background-color: #3f2377;
+        }
         
         nav {
-          float: right;
-          margin-top: 10px;
+            float: right;
+            
         }
-        
-        nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        
+          
         nav li {
-          display: inline-block;
-          margin-left: 20px;
+            display: inline-block;
+            margin-left: 25px;
         }
         
-        nav a {
-          color: #fff;
-          text-decoration: none;
+        .connecter-button{
+        float: left;
+        font-size: 25px;
         }
-        body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-}
+        
+      /*Corps de la page*/
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
 
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    text-align: center;
-}
 
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-}
+      h2 {
+          font-size: 24px;
+          font-weight: bold;
+      }
 
-p {
-    margin: 0 0 20px;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 20px;
-}
 .recipe-search {
     background-color: #f2f2f2;
     padding: 20px;
@@ -140,33 +132,32 @@ li {
     margin: 0 auto;
 }
 
-        /* Recipe Search */
-        
-        .recipe-search {
-          margin-bottom: 50px;
-        }
-        
-        .recipe-search input[type="text"] {
-          padding: 10px;
-          width: 50%;
-          border-radius: 5px;
-          border: 1px solid #ccc;
-          font-size: 16px;
-        }
-        
-        .recipe-search input[type="submit"] {
-          padding: 10px;
-          border-radius: 5px;
-          border: none;
-          background-color: #4CAF50;
-          color: #fff;
-          font-size: 16px;
-          cursor: pointer;
-          margin-left: 10px;
-        }
-        /*Footer */
+/* Recipe Search */
+.recipe-search {
+  margin-bottom: 50px;
+}
 
-        footer {
+.recipe-search input[type="text"] {
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.recipe-search input[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/*Footer */
+footer {
   background-color: #4CAF50;
   padding: 50px 0;
 }
@@ -249,45 +240,39 @@ iframe {
 <body>
 
     <header>
-        <div class="logo">Happy Nutrition</div>
-        <h1><a href="Acceuil.html"> Happy Nutrition </a></h1>
+        
+        <h1> Happy Nutrition </h1>
 
         <nav>
             <ul class="menu">
                 <li><a class="active" href="articles.html">Articles</a></li>
                 <li><a href="pratique.html">Pratique nutritionnelle</a></li>
-                <li><a href="Pratiques sportif.html">Pratique sportive</a></li>
+                <li><a href="/pratiqueSport.html">Pratique sportive</a></li>
                 <li><a href="recettes.html">Recettes</a></li>
                 <li><a href="regimes.html">Régimes</a></li>
             </ul>
         </nav>
-        <button class="connecter-button"><a href="connecter.html">Connecter</a></button>
+        <button class="connecter-button"><a href="connecter.html">Se Connecter</a></button>
     </header>
 
     
     <section class="recipe-search">
         <div class="container">
-            <h2>Chercher la </h2>
+            <h2>Rechercher</h2>
             <form>
-                <input type="text" placeholder="Search for recipes...">
+                <input type="text" placeholder="Rechercher une recette">
                 <input type="submit" value="Search">
             </form>
         </div>
-    <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+        
+
 <body>
     <ul>
         <li>
             <div class="article-container">
                 <h2><a href="articles.html">Articles</a></h2>
             </div>
-        </li>
+        
         <li>
             <div class="article-container">
                 <h2><a href="articles.html">Pratique nutritionnelle</a></h2>
@@ -301,16 +286,19 @@ iframe {
                 </table>
             </div>
         </li>
+       
         <li>
             <div class="article-container">
                 <h2><a href="articles.html">Pratique sportive</h2>
             </div>
         </li>
+        
         <li>
             <div class="article-container">
                 <h2><a href="articles.html">Recettes</a></h2>
             </div>
         </li>
+       
         <li>
             <div class="article-container">
                 <h2><a href="articles.html">Régimes</a></h2>
@@ -334,10 +322,6 @@ iframe {
               <a href="https://www.instagram.com/myhappynutrition"><i class="fab fa-instagram"></i></a>
               <a href="https://www.youtube.com/myhappynutrition"><i class="fab fa-youtube"></i></a>
             </div>
-          </div>
-          <div class="map-container">
-            <h3>Find Us</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.856525065766!2d2.337757108724491!3d48.864712125184386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f6bde6c19%3A0x6a205c6bb76f6ca7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1658168689754!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
         <p>&copy; 2023  CY Tech</p>
