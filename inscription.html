@@ -1,92 +1,83 @@
 <!doctype html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign Up Form</title>
+    <title>Inscription</title>
     <style>
         body {
-            background-color: #f3f3f3;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
+            background-image: url(/Image_nutrition.png);
             text-align: center;
+            color: rgb(49, 31, 31);
+            font-size: 15px;
         }
+
+        .container {
+            width: 40%;
+            padding: 20px;
+            background-color: rgb(111, 190, 62);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 7%;
+            left: 30%;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 45px;
+        }
+
         label {
             display: block;
-            margin-bottom: 10px;
         }
+
         input[type="text"], input[type="password"], input[type="number"] {
-            width: 100%;
+            width: 60%;
             padding: 10px;
             border-radius: 5px;
             border: none;
-            margin-bottom: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
         }
+
         input[type="submit"] {
-            background-color: #4CAF50;
+            display: block;
+            margin: auto;
+            background-color: #237726;
             color: #fff;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px;
+            border-radius: 9px;
             cursor: pointer;
-            transition: background-color 0.2s ease-in-out;
         }
+
         input[type="submit"]:hover {
-            background-color: #2E8B57;
+            background-color: #3f2377;
         }
-        .error {
-            color: #f00;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Sign Up Form</h1>
+        <h1>INSCRIPTION</h1>
         <form action="#" method="post">
-            <label for="username">Username:</label>
+
+            <label for="username">Identifiant:</label>
             <input type="text" id="username" name="username" required>
 
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
 
-            <label for="password">Password:</label>
+            <label for="password">Mot de Passe:</label>
             <input type="password" id="password" name="password" required>
 
-            <label for="height">Height (in cm):</label>
+            <label for="height">Taille (en cm):</label>
             <input type="number" id="height" name="height" required>
 
-            <label for="weight">Weight (in kg):</label>
+            <label for="weight">Poids (en kg):</label>
             <input type="number" id="weight" name="weight" required>
-
-            <label for="bmi">BMI:</label>
-            <input type="text" id="bmi" name="bmi" disabled>
             
-            <input type="submit" value="Sign Up">
+            <input type="submit" value="S'inscrire">
         </form>
-        <p class="error">Invalid input. Please try again.</p>
     </div>
-    <script>
-        function calculateBMI() {
-            const height = document.getElementById("height").value;
-            const weight = document.getElementById("weight").value;
-            const bmi = weight / ((height / 100) ** 2);
-            document.getElementById("bmi").value = bmi.toFixed(2);
-        }
-
-        document.getElementById("height").addEventListener("input", calculateBMI);
-        document.getElementById("weight").addEventListener("input", calculateBMI);
-    </script>
 </body>
 </html>
