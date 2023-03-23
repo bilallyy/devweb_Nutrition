@@ -10,8 +10,10 @@
         color: #fff;
         padding: 20px;
         position: fixed;
-        width: 97%;
+        width: 98%;
         top: 0%;
+        left: 0%;
+        right: 0%;
     }
 
     h1 {
@@ -51,9 +53,11 @@
       
     /*Corps de la page*/
     .article-container{
-      padding: 10px;
-      margin-top: 50px;
-      margin-bottom: 50px;
+      padding: 20px;
+      margin: auto;
+      margin-bottom: 200px;
+      border-radius: 15px;
+      width: 90%;
     }
     .article-container h2{
       text-align: center; 
@@ -69,30 +73,29 @@
       padding: 15px;
     }
     .article{
-      margin-top: 170px;
-      background-color: rgb(70, 139, 244);
+      background-color: rgb(70, 139, 244,0.9);
     }
     .pratique{
-      background-color: rgb(220, 220, 7);
+      background-color: rgb(220, 220, 7,0.9);
     }
     .pratiqueSport{
-      background-color: grey;
+      background-color: rgba(128, 79, 129, 0.9);
     }
     .recette{
-      background-color: brown;
+      background-color: rgb(143, 35, 35,0.9);
     }
     .regime{
-      background-color: burlywood;
+      background-color: rgb(222, 184, 135,0.9);
     }
 
     /*Carte articles*/
     .card {
-      width: 210px;
-      height: 190px;
+      width: 250px;
+      height: 250px;
       background: white;
       padding: .4em;
       border-radius: 6px;
-      margin: 15px;
+      margin: 20px;
     }
 
     .card-image {
@@ -105,16 +108,32 @@
     .card-image:hover {
       transform: scale(0.98);
     }
+    table{
+      margin: auto;
+    }
+    
+    body{
+      background-image: url(/Image_nutrition.png);
+    }
+
+    .texteAcceuil{
+      background-color: rgb(111, 190, 62,0.9);
+      padding: 20px;
+      margin-top: 300px;
+      margin-bottom: 120px;
+      border-radius: 15px;
+    }
 
     .explicationSite{
       column-count: 3;
       font-size: 25px;
-      
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
+
 
     /*Footer */
     footer {
-      background-color: #6fbe3e;
+      background-color: rgb(111, 190, 62);
       padding: 2px;
       text-align: center;
       color: #fff;  
@@ -127,6 +146,18 @@
     display: none;
   }
 }
+@media screen and (max-width: 1350px) {
+  .carte4{
+    display: none;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .carte3{
+    display: none;
+  }
+}
+
+
 
   </style>
 
@@ -136,8 +167,8 @@
   <header>   
     <h1> Happy Nutrition </h1>
     <nav>
-      <ul class="menu">
-        <li><a class="active" href="articles.html">Articles</a></li>
+      <ul>
+        <li><a class="active" href="/articles.html">Articles</a></li>
         <li><a href="pratique.html">Pratique nutritionnelle</a></li>
         <li><a href="/pratiqueSport.html">Pratique sportive</a></li>
         <li><a href="recettes.html">Recettes</a></li>
@@ -146,64 +177,170 @@
     </nav>
     <a class="connecter-button" href="connecter.html">Se Connecter</a>
   </header>
+
+  <div class="texteAcceuil">
+    <p class="explicationSite">
+      Le rythme accéléré de notre vie au quotidien ne nous permet pas d’être attentifs à notre santé et à nos aliments.
+      Il est aujourd’hui établi que les plus grands risques de maladies non transmissibles et les comportements à risque pour la santé sont l’hypertension, l’hypercholestérolémie, 
+      une faible consommation de fruits et légumes, une consommation excessive de boissons alcoolisées, la surcharge pondérale et l’obésité, la sédentarité et le tabagisme. 
+      Une mauvaise alimentation et la sédentarité comptent donc parmi les principales causes de maladies non transmissibles.
+      D’où Le site « Happy Nutrition », Ce site consiste à présenter les bonnes pratiques pour une meilleur hygiène de vie en décrivant les aliments à consommer et des conseils pour les régimes alimentaires. Ce site permet une meilleure nutrition au quotidien
+    </p>
+  </div>
         
 
-  <div class="article-container">
-  </div>
-
-  <div class="article-container article">
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="category"> Illustration </div>
-    </div>
+  <div class="article-container article" id="article">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte4">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
+    
     <h2><a href="articles.html">Voir tous les articles</a></h2>
   </div>
 
-  <div class="article-container pratique">
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="category"> Illustration </div>
-    </div>
+  <div class="article-container pratique" id="pratique">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte4">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
     <h2><a href="/pratique.html">Voir toutes les pratiques nutritionnelles</a></h2>
   </div>
 
-  <div class="article-container pratiqueSport">
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="category"> Illustration </div>
-    </div>
+  <div class="article-container pratiqueSport" id="pratiqueSport">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte4">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
     <h2><a href="/pratiqueSport.html">Voir toutes les pratiques sportives</h2>
   </div>
 
-  <div class="article-container recette">
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="category"> Illustration </div>
-    </div>
+  <div class="article-container recette" id="recette">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte4">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
     <h2><a href="/recettes.html">Voir toutes les recettes</a></h2>
   </div>
 
-  <div class="article-container regime">
-    <div class="card">
-      <div class="card-image"></div>
-      <div class="category"> Illustration </div>
-    </div>
+  <div class="article-container regime" id="regime">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte4">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
      <h2><a href="/regimes.html">Voir tous les régimes</a></h2>
   </div>
 
-  <p class="explicationSite">
-    Le rythme accéléré de notre vie au quotidien ne nous permet pas d’être attentifs à notre santé et à nos aliments.
-    Il est aujourd’hui établi que les plus grands risques de maladies non transmissibles et les comportements à risque pour la santé sont l’hypertension, l’hypercholestérolémie, 
-    une faible consommation de fruits et légumes, une consommation excessive de boissons alcoolisées, la surcharge pondérale et l’obésité, la sédentarité et le tabagisme. 
-    Une mauvaise alimentation et la sédentarité comptent donc parmi les principales causes de maladies non transmissibles.
-    D’où Le site « Happy Nutrition », Ce site consiste à présenter les bonnes pratiques pour une meilleur hygiène de vie en décrivant les aliments à consommer et des conseils pour les régimes alimentaires. Ce site permet une meilleure nutrition au quotidien
-  </p>
-
-
-
-
-
-
+  
   <footer>
     <h3>Contacter Nous</h3>
     <p>Cergy, France <br>Phone: +33 123 456 789 <br>Email: Cytech@myhappynutrition.com</p>
