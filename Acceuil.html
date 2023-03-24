@@ -7,6 +7,8 @@
     /* Header */
     header {
         background-color: #6fbe3e;
+        border-bottom-left-radius: 55px;
+        border-bottom-right-radius: 55px;
         color: #fff;
         padding: 20px;
         position: fixed;
@@ -57,7 +59,7 @@
       padding: 20px;
       margin: auto;
       margin-bottom: 200px;
-      border-radius: 15px;
+      border-radius: 40px;
       width: 90%;
     }
     .article-container h2{
@@ -74,60 +76,64 @@
       padding: 15px;
     }
     .article{
-      background-color: rgb(70, 139, 244,0.9);
+      background-color: rgb(70, 139, 244);
     }
     .pratique{
-      background-color: rgb(220, 220, 7,0.9);
+      background-color: rgb(220, 220, 7);
     }
     .pratiqueSport{
-      background-color: rgba(128, 79, 129, 0.9);
+      background-color: rgba(128, 79, 129);
     }
     .recette{
-      background-color: rgb(143, 35, 35,0.9);
+      background-color: rgb(143, 35, 35);
     }
     .regime{
-      background-color: rgb(222, 184, 135,0.9);
+      background-color: rgb(222, 184, 135);
     }
 
     /*Carte articles*/
     .card {
-      width: 250px;
-      height: 250px;
+      width: 400px;
+      height: 300px;
       background: white;
       padding: .4em;
-      border-radius: 6px;
+      border-radius: 50px;
       margin: 20px;
     }
 
     .card-image {
       background-color: rgb(236, 236, 236);
-      width: 100%;
-      height: 90%;
-      border-radius: 6px 6px 0 0;
+      margin: auto;
+      width: 98%;
+      height: 85%;
+      border-radius: 50px 50px 0 0;
     }
-
-    .card-image:hover {
-      transform: scale(0.98);
-    }
+    
     table{
       margin: auto;
     }
     
     body{
       background-image: url(/Image_nutrition.png);
+      background-size: 1000px;
+      background-attachment: fixed;
     }
 
     .texteAcceuil{
-      background-color: rgb(111, 190, 62,0.9);
+     background-color: rgb(255, 255, 255,0.9);
       padding: 20px;
       margin-top: 300px;
       margin-bottom: 120px;
       border-radius: 15px;
     }
+    .texteAcceuil h2{
+      text-align: center;
+      font-size: 45px;
+    }
 
     .explicationSite{
-      column-count: 3;
-      font-size: 25px;
+      text-align: center;
+      font-size: 45px;
       font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
@@ -138,6 +144,8 @@
       padding: 2px;
       text-align: center;
       color: #fff;  
+      border-top-right-radius: 75px;
+      border-top-left-radius: 75px;
     }
 
 
@@ -147,13 +155,13 @@
     display: none;
   }
 }
-@media screen and (max-width: 1350px) {
-  .carte4{
+@media screen and (max-width: 1450px) {
+  .carte3{
     display: none;
   }
 }
 @media screen and (max-width: 1010px) {
-  .carte3{
+  .carte2{
     display: none;
   }
 }
@@ -181,12 +189,10 @@
   </header>
 
   <div class="texteAcceuil">
+    <h2>Pour un meilleur quotidien</h2>
     <p class="explicationSite">
       Le rythme accéléré de notre vie au quotidien ne nous permet pas d’être attentifs à notre santé et à nos aliments.
-      Il est aujourd’hui établi que les plus grands risques de maladies non transmissibles et les comportements à risque pour la santé sont l’hypertension, l’hypercholestérolémie, 
-      une faible consommation de fruits et légumes, une consommation excessive de boissons alcoolisées, la surcharge pondérale et l’obésité, la sédentarité et le tabagisme. 
-      Une mauvaise alimentation et la sédentarité comptent donc parmi les principales causes de maladies non transmissibles.
-      D’où Le site « Happy Nutrition », Ce site consiste à présenter les bonnes pratiques pour une meilleur hygiène de vie en décrivant les aliments à consommer et des conseils pour les régimes alimentaires. Ce site permet une meilleure nutrition au quotidien
+      Le site « Happy Nutrition » vous présente les bonnes pratiques pour une meilleur hygiène de vie et une meilleure nutrition.
     </p>
   </div>
         
@@ -207,12 +213,6 @@
       </td>
       <td>
         <div class="card carte3">
-          <div class="card-image"></div>
-          <div class="category"> Illustration </div>
-        </div>
-      </td>
-      <td>
-        <div class="card carte4">
           <div class="card-image"></div>
           <div class="category"> Illustration </div>
         </div>
@@ -242,12 +242,6 @@
           <div class="category"> Illustration </div>
         </div>
       </td>
-      <td>
-        <div class="card carte4">
-          <div class="card-image"></div>
-          <div class="category"> Illustration </div>
-        </div>
-      </td>
     </table>
     <h2><a href="/pratique.html">Voir toutes les pratiques nutritionnelles</a></h2>
   </div>
@@ -268,12 +262,6 @@
       </td>
       <td>
         <div class="card carte3">
-          <div class="card-image"></div>
-          <div class="category"> Illustration </div>
-        </div>
-      </td>
-      <td>
-        <div class="card carte4">
           <div class="card-image"></div>
           <div class="category"> Illustration </div>
         </div>
@@ -302,12 +290,6 @@
           <div class="category"> Illustration </div>
         </div>
       </td>
-      <td>
-        <div class="card carte4">
-          <div class="card-image"></div>
-          <div class="category"> Illustration </div>
-        </div>
-      </td>
     </table>
     <h2><a href="/recettes.html">Voir toutes les recettes</a></h2>
   </div>
@@ -328,12 +310,6 @@
       </td>
       <td>
         <div class="card carte3">
-          <div class="card-image"></div>
-          <div class="category"> Illustration </div>
-        </div>
-      </td>
-      <td>
-        <div class="card carte4">
           <div class="card-image"></div>
           <div class="category"> Illustration </div>
         </div>
