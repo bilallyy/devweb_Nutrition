@@ -1,197 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
     <style>
-   
-        /* Header */
-        
-        header {
-          background-color: #4CAF50;
-          color: #fff;
-          padding: 20px;
-        }
-        
-        header h1 {
-          margin: 0;
-        }
-        /* Navigation */
-        
-        nav {
-          float: right;
-          margin-top: 10px;
-        }
-        
-        nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        
-        nav li {
-          display: inline-block;
-          margin-left: 20px;
-        }
-        
-        nav a {
-          color: #fff;
-          text-decoration: none;
-        }
-   
-   /* Styles pour le titre de la page */
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 30px;
-  text-align: center;
+       /* Header */
+       header {
+        background-color: #6fbe3e;
+        border-bottom-left-radius: 55px;
+        border-bottom-right-radius: 55px;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        width: 98%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+    }
+
+    h1 {
+      font-size: 80px;
+      font-weight: bold;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-top: 0%;
+      margin-bottom: 0%;
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #237726;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    header a:hover {
+        background-color: #3f2377;
+    }
+      
+    nav {
+        float: right;    
+    }
+      
+    nav li {
+      display: inline-block;
+      margin-left: 25px;
+    }
+    
+    .connecter-button{
+      float: left;
+      font-size: 25px;
+      margin-right: 15px;
+    }
+
+    section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
-/* Styles pour les sections */
-section {
-  margin: 30px 0;
-}
-
-section h2 {
+h2 {
   font-size: 24px;
   font-weight: bold;
-}
-
-section p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* Styles pour les listes d'activités */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
   margin-bottom: 10px;
 }
 
-/* Styles pour les images */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
-/* Styles pour le bouton */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #0099ff;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+       
+    /*Footer */
+    footer {
+      background-color: rgb(111, 190, 62);
+      padding: 2px;
+      text-align: center;
+      color: #fff;  
+      border-top-right-radius: 75px;
+      border-top-left-radius: 75px;
+    }
 
-.btn:hover {
-  background-color: #0080ff;
-}
-footer {
-  background-color: #4CAF50;
-  padding: 50px 0;
-}
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.contact-container {
-  width: 50%;
-  max-width: 500px;
-}
-
-.contact-container h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.contact-container p {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.social-media a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #3b5998;
-  color: #fff;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.social-media a:hover {
-  background-color: #344d6b;
-}
-
-.social-media a:last-child {
-  margin-right: 0;
-}
-
-.map-container {
-  width: 50%;
-  max-width: 500px;
-}
-
-.map-container h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-iframe {
-  width: 100%;
-  height: 250px;
-  border: none;
-}
-
-@media screen and (max-width: 768px) {
-  .contact-container,
-  .map-container {
-    width: 100%;
-    max-width: none;
+@media screen and (max-width: 833px) {
+  header nav{
+    display: none;
   }
-
-  .social-media {
-    margin-top: 20px;
+}
+@media screen and (max-width: 1450px) {
+  .carte3{
+    display: none;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .carte2{
+    display: none;
   }
 }
     </style>
-<head>
-	<meta charset="UTF-8">
-	<title>Pratiques Sportives - Mon Site de Nutrition</title>
-</head>
-<body>
-    <header>
-        <div class="logo">Happy Nutrition</div>
-        <h1><a href="Acceuil.html"> Happy Nutrition </a></h1>
 
-        <nav>
-            <ul class="menu">
-                <li><a class="active" href="articles.html">Articles</a></li>
-                <li><a href="pratique.html">Pratique nutritionnelle</a></li>
-                <li><a href="Pratiques sportif.html">Pratique sportive</a></li>
-                <li><a href="recettes.html">Recettes</a></li>
-                <li><a href="regimes.html">Régimes</a></li>
-            </ul>
-        </nav>
-        <button class="connecter-button"><a href="connecter.html">Connecter</a></button>
-    </header>
-	<main>
+<body>
+
+
+  <header>   
+    <h1> Happy Nutrition </h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="/articles.html">Articles</a></li>
+        <li><a href="pratique.html">Pratique nutritionnelle</a></li>
+        <li><a href="/pratiqueSport.html">Pratique sportive</a></li>
+        <li><a href="recettes.html">Recettes</a></li>
+        <li><a href="regimes.html">Régimes</a></li>
+      </ul>
+    </nav>
+    <a href="Acceuil.html" class="connecter-button">Acceuil</a>
+  </header>
+
+
 		<section>
 			<h2>Course à pied</h2>
 			<p>La course à pied est un excellent moyen de rester en forme. Elle améliore l'endurance cardiovasculaire, renforce les muscles des jambes et peut aider à perdre du poids. Pour commencer, il suffit d'avoir une paire de chaussures confortables et de se lancer !</p>
@@ -207,29 +132,56 @@ iframe {
 			<p>Le cyclisme est un excellent moyen de se déplacer tout en faisant de l'exercice. Il renforce les muscles des jambes et des fesses, améliore l'endurance cardiovasculaire et peut aider à perdre du poids. Pour commencer, il suffit d'avoir un vélo confortable et de se lancer sur les routes ou les pistes cyclables !</p>
 			<img src="cyclisme.jpg" alt="Cyclisme">
 		</section>
-	</main>
-    <footer>
-        <div class="footer-container">
-          <div class="contact-container">
-            <h3>Contact Us</h3>
-            <p>avenue de port </p>
-            <p>Cergy, France</p>
-            <p>Phone: +33 123 456 789</p>
-            <p>Email: Cytech@myhappynutrition.com</p>
-            <div class="social-media">
-              <a href="https://www.facebook.com/myhappynutrition"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/myhappynutrition"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/myhappynutrition"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="map-container">
-            <h3>Find Us</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.856525065766!2d2.337757108724491!3d48.864712125184386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f6bde6c19%3A0x6a205c6bb76f6ca7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1658168689754!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-        <p>&copy; 2023  CY Tech</p>
-      </footer>
-</body>
-</html>
+    <section>
+			<h2>YouTube Channel</h2>
+			<p>Check out our recommended YouTube channel for fitness and nutrition tips:</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<p>Or visit the channel directly <a href="#">here</a>.</p>
+		</section>
+		<section>
+			<h2>Fitness Tips</h2>
+			<p>Stay active and healthy with these tips:</p>
+			<ul>
+				<li>Start with simple exercises like walking or jogging</li>
+				<li>Set achievable goals to stay motivated</li>
+				<li>Find a workout buddy to keep you accountable</li>
+				<li>Incorporate fitness into your daily routine, like taking the stairs instead of the elevator</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Healthy Recipes</h2>
+			<p>Try these nutritious recipes:</p>
+			<ul>
+				<li><strong>Breakfast:</strong> Avocado Toast with Egg</li>
+				<li><strong>Lunch:</strong> Grilled Chicken Salad</li>
+				<li><strong>Dinner:</strong> Baked Salmon with Roasted Vegetables</li>
+				<li><strong>Snack:</strong> Greek Yogurt with Mixed Berries</li>
+			</ul>
+			<p>Click on each recipe to view the nutritional value.</p>
+		</section>
+		<section>
+			<h2>Success Stories</h2>
+			<p>Read about people who have achieved their fitness and nutrition goals:</p>
+			<ul>
+				<li>Interview with John, who lost 50 pounds through regular exercise and healthy eating</li>
+				<li>Story of Sarah, who went from a sedentary lifestyle to running her first marathon</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Product Reviews</h2>
+			<p>Check out our reviews of fitness and nutrition products:</p>
+			<ul>
+				<li>Review of Protein Powders</li>
+				<li>Comparison of Fitness Trackers</li>
+			</ul>
+			<p>Find out which products we recommend for your fitness journey.</p>
+		</section>
 
+    <footer>
+      <h3>Contacter Nous</h3>
+      <p>Cergy, France <br>Phone: +33 123 456 789 <br>Email: Cytech@myhappynutrition.com</p>
+      <p>&copy; 2023  CY Tech</p>
+    </footer>
+  
+  </body>
 
