@@ -2,158 +2,374 @@
 <html>
 <head>
 	<title>Healthy Eating</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <style>/* Set default styles for body and headings */
+    <style>
 
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-        }
-        
-        h1 {
-          font-size: 36px;
-          margin-top: 0;
-        }
-        
-        h2 {
-          font-size: 24px;
-          margin-top: 0;
-        }
-        
-        /* Style header and navigation */
-        
-        header {
-          background-color: #4CAF50;
-          color: #fff;
-          padding: 20px;
-        }
-        
-        nav {
-          float: right;
-          margin-top: 10px;
-        }
-        
-        nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        
-        nav li {
-          display: inline-block;
-          margin-left: 20px;
-        }
-        
-        nav a {
-          color: #fff;
-          text-decoration: none;
-        }
-        
-        /* Set main content margin */
-        
-        main {
-          margin: 20px;
-        }
-        
-        /* Set styles for sections, lists, and paragraphs */
-        
-        section {
-          margin-top: 50px;
-        }
-        
-        ul {
-          margin-top: 0;
-          padding-left: 20px;
-        }
-        
-        p {
-          line-height: 1.5;
-        }
-        
-        /* Set styles for benefits and snacks sections */
-        
-        #food-groups{
-          background-color: #4d2597;
-          padding: 20px;
+    
+       /* Header */
+       header {
+        background-color: #6fbe3e;
+        border-bottom-left-radius: 55px;
+        border-bottom-right-radius: 55px;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        width: 98%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+    }
 
-        }
+    h1 {
+      font-size: 80px;
+      font-weight: bold;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-top: 0%;
+      margin-bottom: 0%;
+    }
 
-        #healthy-recipes{
-          background-color: #cb1414;
-          padding: 20px;
+    header a {
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #237726;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    header a:hover {
+        background-color: #3f2377;
+    }
+      
+    nav {
+        float: right;    
+    }
+      
+    nav li {
+      display: inline-block;
+      margin-left: 25px;
+    }
+    
+    .connecter-button{
+      float: left;
+      font-size: 25px;
+      margin-right: 15px;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    }
+   
 
-        }
-        #portion-control{
-          background-color: #9acf26;
-          padding: 20px;
 
-        }
-        #eating-out{
-          background-color: #cb1414;
-          padding: 20px;
 
-        }
+/*food-groups*/
+#food-groups {
+  margin-top: 20px;
+  text-align: center;
+}
 
-        #benefits {
-          background-color: #146dcb;
-          padding: 20px;
-        }
-        
-        #benefits ul {
-          list-style-type: disc;
-        }
-        
-        #snacks {
-          background-color: #ffe6cc;
-          padding: 20px;
-        }
-        
-        #snacks ul {
-          list-style-type: none;
-          column-count: 2;
-        }
-        
-        #snacks li {
-          margin-bottom: 10px;
-        }
-        
-        /* Set styles for footer */
-        
-        footer {
-          background-color: #4CAF50;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-      }
-      .menu {
-      float: right;
-       margin-right: 20px;
-      }
-        
-        /* Greenlighter syntax highlighting */
-        
-        .token.selector {
-          color: #690;
-        }
-        
-        .token.property {
-          color: #905;
-        }
-        
-        .token.punctuation {
-          color: #999;
-        }
-        
-        .token.function {
-          color: #DD4A68;
-        }
-        
-        .token.comment {
-          color: #708090;
-        }
+#food-groups h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#food-groups p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#food-groups ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+#food-groups li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#food-groups table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#food-groups th,
+#food-groups td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#food-groups th {
+  background-color: #f2f2f2;
+  font-size: 18px;
+  font-weight: bold;
+}
+.food-groups p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333;
+}
+/*healthy-recipes*/
+#healthy-recipes {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#healthy-recipes h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#healthy-recipesl p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#healthy-recipes ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+#healthy-recipes li {
+  margin-bottom: 10px;
+}
+#healthy-recipes li::before {
+  content: "\2022";
+  color: #6fbe3e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/*portion-control*/
+#portion-control {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#portion-control h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#portion-control p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#portion-control ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+#portion-control li {
+  margin-bottom: 10px;
+}
+#portion-control li::before {
+  content: "\2022";
+  color: #6fbe3e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/*eating-out*/
+#eating-out {
+  
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#eating-out h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#eating-out p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#eating-out ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+#eating-out li {
+  margin-bottom: 10px;
+}
+
+#eating-out li::before {
+  content: "\2022";
+  color: #6fbe3e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+/*benefits*/
+#benefits {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#benefits h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#benefits p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#benefits ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+#benefits li {
+  margin-bottom: 10px;
+}
+#benefits li::before {
+  content: "\2022";
+  color: #6fbe3e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+.benefits li {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.benefits li:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+/*snacks*/
+#snacks {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+#snacks h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#snacks p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#snacks ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+#snacks li {
+  margin-bottom: 10px;
+}
+#snacks li::before {
+  content: "\2022";
+  color: #6fbe3e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/*Footer */
+   footer {
+background-color: rgb(111, 190, 62);
+padding: 2px;
+text-align: center;
+color: #fff;  
+border-top-right-radius: 75px;
+border-top-left-radius: 75px;
+}
+
+
+
+@media screen and (max-width: 833px) {
+  header nav{
+    display: none;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .carte3{
+    display: none;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .carte2{
+    display: none;
+  }
+}
         
 
         </style>
+<<<<<<< HEAD
 </head>
 <body>
 	<header>
@@ -173,6 +389,24 @@
   </header>
   
 	<main>
+=======
+
+<header>   
+  <h1> Happy Nutrition </h1>
+  <nav>
+    <ul>
+      <li><a class="active" href="/articles.html">Articles</a></li>
+      <li><a href="pratique.html">Pratique nutritionnelle</a></li>
+      <li><a href="/pratiqueSport.html">Pratique sportive</a></li>
+      <li><a href="recettes.html">Recettes</a></li>
+      <li><a href="regimes.html">Régimes</a></li>
+    </ul>
+  </nav>
+  <a href="Acceuil.html" class="connecter-button">Acceuil</a>
+</header>
+
+
+>>>>>>> 2202acebc3dcc215e32a55d74a816c3ea4800ba2
 		<section id="food-groups">
 			<h2>Food Groups</h2>
 			<p>There are five main food groups that are important for maintaining a healthy diet:</p>
@@ -226,17 +460,8 @@
 					<li>2 tablespoons olive oil</li>
 					<li>1 teaspoon salt</li>
 					<li>1/2 teaspoon black pepper</li>
-				</ul>
-				<p>Directions:</p>
-				<ol>
-					<li>Preheat grill to medium-high heat.</li>
-					<li>Thread chicken, zucchini, bell pepper, and onion onto skewers.</li>
-					<li>Brush skewers with olive oil and season with salt and pepper.</li>
-					<li>Grill for 10-12 minutes, turning occasionally, until chicken is cooked through.</li>
-			
-                </ol>
-                <p>Serve with rice or quinoa for a healthy, balanced meal.</p>
-                <p><a href="#">See more healthy recipes here</a></p>
+				
+                <p><a href="https://www.marmiton.org/recettes/recette_brochettes-de-poulet-et-de-legumes-marinees-au-quatre-epices_73533.aspx">See more healthy recipes here</a></p>
                 </div>
             </section>
             
@@ -288,9 +513,12 @@
         </main>
 
         <footer>
+          <h3>Contacter Nous</h3>
+          <p>Cergy, France <br>Phone: +33 123 456 789 <br>Email: Cytech@myhappynutrition.com</p>
           <p>&copy; 2023  CY Tech</p>
-      </footer>
-  </body>
-  </html>
-  
+        </footer>
+      
+      </body>
+            
+    
    
