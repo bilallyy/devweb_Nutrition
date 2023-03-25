@@ -1,342 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition</title>
+  <title>Acceuil</title>
     
-    <style>
-            /* Header */
-        
-            header {
-          background-color: #4CAF50;
-          color: #fff;
-          padding: 20px;
-        }
-        
-        header h1 {
-          margin: 0;
-        }
-        
-        /* Navigation */
-        
-        nav {
-          float: right;
-          margin-top: 10px;
-        }
-        
-        nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        
-        nav li {
-          display: inline-block;
-          margin-left: 20px;
-        }
-        
-        nav a {
-          color: #fff;
-          text-decoration: none;
-        }
-        body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-}
+  <style>
+          
+    /* Header */
+    header {
+        background-color: #6fbe3e;
+        border-bottom-left-radius: 55px;
+        border-bottom-right-radius: 55px;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        width: 98%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+    }
 
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    text-align: center;
-}
+    h1 {
+      font-size: 80px;
+      font-weight: bold;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-top: 0%;
+      margin-bottom: 0%;
+    }
 
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-}
+    header a {
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #237726;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    header a:hover {
+        background-color: #3f2377;
+    }
+      
+    nav {
+        float: right;    
+    }
+      
+    nav li {
+      display: inline-block;
+      margin-left: 25px;
+    }
+    
+    .connecter-button{
+      float: left;
+      font-size: 25px;
+      margin-right: 15px;
+    }
+      
+    /*Corps de la page*/
+    .article-container{
+      padding: 20px;
+      margin: auto;
+      margin-bottom: 200px;
+      border-radius: 40px;
+      width: 90%;
+    }
+    .article-container h2{
+      text-align: center; 
+    }
+    .article-container a:hover{
+      background-color: rgba(29, 22, 22, 0.7);
+    }
+    .article-container a{
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(29, 22, 22, 0.4);
+      border-radius: 15px;
+      padding: 15px;
+    }
+    .article{
+      background-color: rgb(70, 139, 244);
+    }
+    .pratique{
+      background-color: rgb(220, 220, 7);
+    }
+    .pratiqueSport{
+      background-color: rgba(128, 79, 129);
+    }
+    .recette{
+      background-color: rgb(143, 35, 35);
+    }
+    .regime{
+      background-color: rgb(222, 184, 135);
+    }
 
-p {
-    margin: 0 0 20px;
-}
+    /*Carte articles*/
+    .card {
+      width: 400px;
+      height: 300px;
+      background: white;
+      padding: .4em;
+      border-radius: 50px;
+      margin: 20px;
+    }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    .card-image {
+      background-color: rgb(236, 236, 236);
+      margin: auto;
+      width: 98%;
+      height: 85%;
+      border-radius: 50px 50px 0 0;
+    }
+    
+    table{
+      margin: auto;
+    }
+    
+    body{
+      background-image: url("Image_nutrition.png");
+      background-size: 1000px;
+      background-attachment: fixed;
+    }
 
-li {
-    margin-bottom: 20px;
-}
-.recipe-search {
-    background-color: #f2f2f2;
-    padding: 20px;
-}
+    .texteAcceuil{
+     background-color: rgb(255, 255, 255,0.9);
+      padding: 20px;
+      margin-top: 300px;
+      margin-bottom: 120px;
+      border-radius: 15px;
+    }
+    .texteAcceuil h2{
+      text-align: center;
+      font-size: 45px;
+    }
 
-.recipe-search h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-}
+    .explicationSite{
+      text-align: center;
+      font-size: 45px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
-.recipe-search form {
-    display: flex;
-    justify-content: center;
-}
 
-.recipe-search input[type="text"] {
-    padding: 10px;
-    width: 50%;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    margin-right: 10px;
-}
+    /*Footer */
+    footer {
+      background-color: rgb(111, 190, 62);
+      padding: 2px;
+      text-align: center;
+      color: #fff;  
+      border-top-right-radius: 75px;
+      border-top-left-radius: 75px;
+    }
 
-.recipe-search input[type="submit"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
 
-.article-container {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.article-container h2 {
-    font-size: 24px;
-    margin: 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.article-container table {
-    width: 20em;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-.article-container td {
-    width: 33.33%;
-    padding: 10px;
-    vertical-align: middle;
-}
-
-.article-container img {
-    max-width: 20em;
-    height: 20em;
-    display: block;
-    margin: 0 auto;
-}
-
-        /* Recipe Search */
-        
-        .recipe-search {
-          margin-bottom: 50px;
-        }
-        
-        .recipe-search input[type="text"] {
-          padding: 10px;
-          width: 50%;
-          border-radius: 5px;
-          border: 1px solid #ccc;
-          font-size: 16px;
-        }
-        
-        .recipe-search input[type="submit"] {
-          padding: 10px;
-          border-radius: 5px;
-          border: none;
-          background-color: #4CAF50;
-          color: #fff;
-          font-size: 16px;
-          cursor: pointer;
-          margin-left: 10px;
-        }
-        /*Footer */
-
-        footer {
-  background-color: #4CAF50;
-  padding: 50px 0;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.contact-container {
-  width: 50%;
-  max-width: 500px;
-}
-
-.contact-container h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.contact-container p {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.social-media a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #3b5998;
-  color: #fff;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.social-media a:hover {
-  background-color: #344d6b;
-}
-
-.social-media a:last-child {
-  margin-right: 0;
-}
-
-.map-container {
-  width: 50%;
-  max-width: 500px;
-}
-
-.map-container h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-iframe {
-  width: 100%;
-  height: 250px;
-  border: none;
-}
-
-@media screen and (max-width: 768px) {
-  .contact-container,
-  .map-container {
-    width: 100%;
-    max-width: none;
+@media screen and (max-width: 833px) {
+  header nav{
+    display: none;
   }
-
-  .social-media {
-    margin-top: 20px;
+}
+@media screen and (max-width: 1450px) {
+  .carte3{
+    display: none;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .carte2{
+    display: none;
   }
 }
 
-    </style>
+
+
+  </style>
 
 </head>
 <body>
 
-    <header>
-        <div class="logo">Happy Nutrition</div>
-        <h1><a href="Acceuil.html"> Happy Nutrition </a></h1>
+  <header>   
+    <h1> Happy Nutrition </h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="/articles.html">Articles</a></li>
+        <li><a href="pratique.html">Pratique nutritionnelle</a></li>
+        <li><a href="Pratiques sportif.html">Pratique sportive</a></li>
+        <li><a href="recettes.html">Recettes</a></li>
+        <li><a href="regimes.html">Régimes</a></li>
+      </ul>
+    </nav>
+    <a class="connecter-button" href="connecter.html">Se Connecter</a>
+    <a class="connecter-button" href="profile.html">profile</a>
+  </header>
 
-        <nav>
-            <ul class="menu">
-                <li><a class="active" href="articles.html">Articles</a></li>
-                <li><a href="pratique.html">Pratique nutritionnelle</a></li>
-                <li><a href="Pratiques sportif.html">Pratique sportive</a></li>
-                <li><a href="recettes.html">Recettes</a></li>
-                <li><a href="regimes.html">Régimes</a></li>
-            </ul>
-        </nav>
-        <button class="connecter-button"><a href="connecter.html">Connecter</a></button>
-        <button class="profile-button"><a href="profile.html">profile</a></button>
+  <div class="texteAcceuil">
+    <h2>Pour un meilleur quotidien</h2>
+    <p class="explicationSite">
+      Le rythme accéléré de notre vie au quotidien ne nous permet pas d’être attentifs à notre santé et à nos aliments.
+      Le site « Happy Nutrition » vous présente les bonnes pratiques pour une meilleur hygiène de vie et une meilleure nutrition.
+    </p>
+  </div>
+        
 
-    </header>
-
+  <div class="article-container article" id="article">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
     
-    <section class="recipe-search">
-        <div class="container">
-            <h2>Chercher la </h2>
-            <form>
-                <input type="text" placeholder="Search for recipes...">
-                <input type="submit" value="Search">
-            </form>
+    <h2><a href="articles.html">Voir tous les articles</a></h2>
+  </div>
+
+  <div class="article-container pratique" id="pratique">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
         </div>
-    </section>
-
-    <section>
-    <ul>
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Articles</a></h2>
-            </div>
-        </li>
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Pratique nutritionnelle</a></h2>
-                <table>
-                    <tr>
-                        <td><img src="avocado--scaled.jpeg" alt="carre_noir"></td>
-                        <td><img src="chicken-parmesan-recipe.jpg" alt="carre_noir"></td>
-                        <td><img src="SandwichFromagePommesP60web.jpg" alt="carre_noir"></td>
-
-                    </tr>
-                </table>
-            </div>
-        </li>
-        <li>
-            
-            <div class="article-container">
-                <h2><a href="articles.html">Pratique sportive</h2>
-            </div>
-        </li>
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Recettes</a></h2>
-            </div>
-        </li>
-        <li>
-            <div class="article-container">
-                <h2><a href="articles.html">Régimes</a></h2>
-            </div>
-        </li>
-    </ul>
-</section>
-
-
-
-    <footer>
-        <div class="footer-container">
-          <div class="contact-container">
-            <h3>Contact Us</h3>
-            <p>avenue de port </p>
-            <p>Cergy, France</p>
-            <p>Phone: +33 123 456 789</p>
-            <p>Email: Cytech@myhappynutrition.com</p>
-            <div class="social-media">
-              <a href="https://www.facebook.com/myhappynutrition"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/myhappynutrition"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/myhappynutrition"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="map-container">
-            <h3>Find Us</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.856525065766!2d2.337757108724491!3d48.864712125184386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f6bde6c19%3A0x6a205c6bb76f6ca7!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1658168689754!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
         </div>
-        <p>&copy; 2023  CY Tech</p>
-      </footer>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
+    <h2><a href="/pratique.html">Voir toutes les pratiques nutritionnelles</a></h2>
+  </div>
+
+  <div class="article-container pratiqueSport" id="pratiqueSport">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
+    <h2><a href="/pratiqueSport.html">Voir toutes les pratiques sportives</h2>
+  </div>
+
+  <div class="article-container recette" id="recette">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
+    <h2><a href="/recettes.html">Voir toutes les recettes</a></h2>
+  </div>
+
+  <div class="article-container regime" id="regime">
+    <table>
+      <td>
+        <div class="card carte1">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte2">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+      <td>
+        <div class="card carte3">
+          <div class="card-image"></div>
+          <div class="category"> Illustration </div>
+        </div>
+      </td>
+    </table>
+     <h2><a href="/regimes.html">Voir tous les régimes</a></h2>
+  </div>
+
+  
+  <footer>
+    <h3>Contacter Nous</h3>
+    <p>Cergy, France <br>Phone: +33 123 456 789 <br>Email: Cytech@myhappynutrition.com</p>
+    <p>&copy; 2023  CY Tech</p>
+  </footer>
+
+</body>
       
